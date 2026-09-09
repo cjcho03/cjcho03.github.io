@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <meta name="author" content="Christopher Cho" >
+  <meta name="description" content="Personal portfolio of Christopher Cho – projects, coursework, and contact information." >
+  <title>Christopher Cho — Portfolio</title>
+
+  <!-- Fonts / Icons / CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+  <link rel="stylesheet" href="css/styles.css" >
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="visually-hidden-focusable" href="#main">Skip to main content</a>
+
+  <!-- Header / Nav -->
+  <header class="border-bottom">
+    <nav class="navbar navbar-expand-lg container" aria-label="Primary">
+      <a class="navbar-brand fw-semibold" href="index.html">
+        <span class="material-icons align-text-bottom" aria-hidden="true">person</span>
+        Christopher Cho
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+        aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.ics.uci.edu/" target="_blank" rel="noopener">UCI ICS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="main" class="container py-4">
+    <!-- Intro -->
+    <section class="row align-items-center g-4 mb-4">
+      <div class="col-12 col-md-6">
+        <h1 class="fw-semibold mb-3">Hi, I’m Christopher Cho</h1>
+        <p class="lead">
+          Student developer focused on systems and backend programming, building compilers, interpreters, AI-backed tools, and research software.
+        </p>
+        <p>
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-outline-secondary" href="about.html">About Me</a>
+        </p>
+      </div>
+      <div class="col-12 col-md-6 text-center">
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-5" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="h3 fw-semibold mb-3">Projects</h2>
+
+      <div class="row g-4">
+        <!-- Survey Sage -->
+        <article class="col-12 col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-1">Survey Sage</h3>
+              <p class="text-muted mb-2">TypeScript • React • Python • Ollama • LLMs</p>
+              <p class="card-text">
+                A six-month team project that replaces traditional clinical survey forms with a conversational AI interface.
+                I contributed backend development, local LLM integration, model evaluation, and data processing for
+                structured survey scoring.
+              </p>
+              <ul class="small mb-3">
+                <li>Conversational survey workflow with structured score extraction</li>
+                <li>Local LLM inference through Ollama for privacy-sensitive data</li>
+                <li>Model evaluation and data-processing work across the project pipeline</li>
+              </ul>
+              <a class="btn btn-sm btn-primary"
+                 href="https://github.com/mindful-metrics/survey-sage"
+                 target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Prolog Interpreter & Visualizer -->
+        <article class="col-12 col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-1">Prolog Interpreter &amp; Visualizer</h3>
+              <p class="text-muted mb-2">Go • TypeScript • Parsing • Interpreters</p>
+              <p class="card-text">
+                A Prolog interpreter written in Go with a TypeScript execution visualizer. It supports parsing,
+                unification, facts and rules, recursive resolution, DFS backtracking, built-ins, arithmetic,
+                and execution tracing.
+              </p>
+              <ul class="small mb-3">
+                <li>Implements unification and recursive rule resolution</li>
+                <li>Supports built-in predicates, arithmetic, and numeric comparisons</li>
+                <li>Visualizer steps through the interpreter's execution trace</li>
+              </ul>
+              <a class="btn btn-sm btn-primary"
+                 href="https://github.com/cjcho03/Prolog-Interpreter-Visualizer"
+                 target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Lisp Compiler -->
+        <article class="col-12 col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-1">Lisp Compiler</h3>
+              <p class="text-muted mb-2">Go • Compilers • x86-64</p>
+              <p class="card-text">
+                A Lisp-to-x86-64 compiler written in Go with lexical analysis, parsing, AST construction,
+                control flow, lexical scoping, short-circuit logic, and platform-specific code generation.
+              </p>
+              <ul class="small mb-3">
+                <li>Clean compiler flow from lexer to parser/AST to code generation</li>
+                <li>SysV Linux and Win64 x86-64 code generation</li>
+                <li>End-to-end tests assemble and execute generated programs</li>
+              </ul>
+              <a class="btn btn-sm btn-primary"
+                 href="https://github.com/cjcho03/lisp-compiler-go"
+                 target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Yield -->
+        <article class="col-12 col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-1">Yield — Reinforcement Learning Study</h3>
+              <p class="text-muted mb-2">Python • Gymnasium • Stable-Baselines3 • Reinforcement Learning</p>
+              <p class="card-text">
+                A reinforcement learning research project studying the tradeoff between driving speed and safety
+                under different reward designs in simulated highway environments.
+              </p>
+              <ul class="small mb-3">
+                <li>Evaluates reward configurations across multiple training seeds</li>
+                <li>Measures safety and driving behavior under different traffic conditions</li>
+                <li>Uses reproducible evaluation and comparison scripts for trained agents</li>
+              </ul>
+              <a class="btn btn-sm btn-primary"
+                 href="https://github.com/bvazrala/Yield"
+                 target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading" class="mb-5">
+      <h2 id="contact-heading" class="h3 fw-semibold mb-3">Contact</h2>
+      <form class="row g-3" action="#" method="post">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name<span aria-hidden="true"> *</span></label>
+          <input type="text" class="form-control" id="name" name="name" required aria-required="true" >
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email<span aria-hidden="true"> *</span></label>
+          <input type="email" class="form-control" id="email" name="email" required aria-required="true" >
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Validators quick-links -->
+    <section class="mb-4">
+      <h2 class="h3 fw-semibold mb-3">Validation</h2>
+      <p>
+        <a href="https://validator.w3.org/nu/#file">W3C HTML Validator</a> ·
+        <a href="https://jigsaw.w3.org/css-validator/">W3C CSS Validator</a> ·
+        <a href="https://achecker.achecks.ca/checker/index.php">AChecker</a> ·
+        <a href="https://wave.webaim.org/">WAVE</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 border-top">
+    <div class="container small d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+      <p class="mb-0">&copy; <span id="year"></span> Christopher Cho. All rights reserved.</p>
+      <p class="mb-0">
+        <a href="https://github.com/cjcho03" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/chris-c-964078238/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
