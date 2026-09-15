@@ -66,7 +66,7 @@
       <div class="col-12 col-md-6">
         <h1 class="fw-semibold mb-3">Hi, I’m Christopher Cho</h1>
         <p class="lead">
-          Student developer focused on systems and backend programming, building compilers, interpreters, AI-backed tools, and research software.
+          Software engineer focused on systems and backend development, building compilers, interpreters, developer tools, and research software.
         </p>
         <p>
           <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -82,6 +82,31 @@
       <h2 id="projects-heading" class="h3 fw-semibold mb-3">Projects</h2>
 
       <div class="row g-4">
+        <!-- Prolog Interpreter & Visualizer -->
+        <article class="col-12 col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-1">Prolog Interpreter &amp; Visualizer</h3>
+              <p class="text-muted mb-2">Go • TypeScript • Vite • Interpreters</p>
+              <p class="card-text">
+                An interactive Prolog interpreter and execution visualizer built with Go and TypeScript. Users can
+                write Prolog facts, rules, and queries and inspect resolution step by step, including unification,
+                substitutions, recursive rule evaluation, failures, and backtracking.
+              </p>
+              <ul class="small mb-3">
+                <li>Implements parsing, unification, recursive resolution, DFS, backtracking, arithmetic, and built-ins</li>
+                <li>Visualizes goals, clause attempts, variable bindings, rule expansion, failures, and solutions</li>
+                <li>Supports trace stepping, scrubbing, auto-play, speed controls, and editable programs and queries</li>
+                <li>Includes Go unit/integration tests and Playwright browser end-to-end tests</li>
+              </ul>
+              <!-- Add a Live Demo button here after deploying the Vite frontend and Go API publicly. -->
+              <a class="btn btn-sm btn-primary"
+                 href="https://github.com/cjcho03/Prolog-Interpreter-Visualizer"
+                 target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
         <!-- Survey Sage -->
         <article class="col-12 col-md-6">
           <div class="card h-100">
@@ -100,29 +125,6 @@
               </ul>
               <a class="btn btn-sm btn-primary"
                  href="https://github.com/mindful-metrics/survey-sage"
-                 target="_blank" rel="noopener">Source</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Prolog Interpreter & Visualizer -->
-        <article class="col-12 col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="card-title h5 mb-1">Prolog Interpreter &amp; Visualizer</h3>
-              <p class="text-muted mb-2">Go • TypeScript • Parsing • Interpreters</p>
-              <p class="card-text">
-                A Prolog interpreter written in Go with a TypeScript execution visualizer. It supports parsing,
-                unification, facts and rules, recursive resolution, DFS backtracking, built-ins, arithmetic,
-                and execution tracing.
-              </p>
-              <ul class="small mb-3">
-                <li>Implements unification and recursive rule resolution</li>
-                <li>Supports built-in predicates, arithmetic, and numeric comparisons</li>
-                <li>Visualizer steps through the interpreter's execution trace</li>
-              </ul>
-              <a class="btn btn-sm btn-primary"
-                 href="https://github.com/cjcho03/Prolog-Interpreter-Visualizer"
                  target="_blank" rel="noopener">Source</a>
             </div>
           </div>
